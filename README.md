@@ -45,7 +45,7 @@ npm run build
 Create an organisation Management API token in Flagsmith (Organisation Settings → API Access) and export it — **never commit it, never print it**:
 
 ```bash
-export FLAGSMITH_API_KEY="…"           # org Management API token
+export FLAGSMITH_API_KEY="…"          # org Management API token
 export FLAGSMITH_PROJECT_ID="56414"   # your project
 export FLAGSMITH_ENVIRONMENT_KEY="…"  # environment key (Development)
 ```
