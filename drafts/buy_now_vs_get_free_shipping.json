@@ -1,0 +1,46 @@
+{
+  "plan": {
+    "prompt": "Does 'Get free shipping' on the checkout button beat 'Buy now' at getting people to complete checkout? success = checkout_completed",
+    "experimentName": "buy_now_vs_get_free_shipping",
+    "hypothesis": "The \"Get free shipping\" wording lifts checkout_completed vs \"Buy now\" over the 3-day build window.",
+    "flagName": "checkout_cta",
+    "controlValue": "Buy now",
+    "variations": [
+      {
+        "value": "Get free shipping",
+        "key": "get_free_shipping",
+        "weight": 50
+      }
+    ],
+    "metricName": "checkout_completed_rate",
+    "metricEvent": "checkout_completed",
+    "rolloutPercentage": 100,
+    "controlSplit": 50
+  },
+  "flag": {
+    "id": 307331,
+    "name": "checkout_cta",
+    "type": "MULTIVARIATE",
+    "control_value": "Buy now"
+  },
+  "variation": {
+    "id": 38217,
+    "value": "Get free shipping",
+    "key": "get_free_shipping",
+    "weight": 50
+  },
+  "metric": {
+    "id": 1467,
+    "name": "checkout_completed_rate",
+    "event": "checkout_completed",
+    "aggregation": "occurrence",
+    "direction": "up"
+  },
+  "experiment": {
+    "id": 1411,
+    "name": "buy_now_vs_get_free_shipping",
+    "status": "created"
+  },
+  "dashboard": "https://app.flagsmith.com/project/56414/environment/iBXcQDGQu4yQnk68QJjeH2/experiments/1411",
+  "created_via": "flagsmith CLI v2 (feature create / variant add / api passthrough) — Node fetch POSTs die on this VM; the binary now routes all writes through the CLI (see flagsmith.ts apiWrite) and its transport probe passed"
+}
